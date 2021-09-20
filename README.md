@@ -1,6 +1,8 @@
 
 > Åpne denne siden på [https://isimagan.github.io/startskjerm/](https://isimagan.github.io/startskjerm/)
 
+**Øvelse:** [https://makecode.microbit.org/#tutorial:github:isimagan/startskjerm/tutorial](https://makecode.microbit.org/#tutorial:github:isimagan/startskjerm/tutorial)
+
 ## Bruk som utvidelse
 
 Dette kodeområdet kan bli lagt til som en **utvidelse** i MakeCode.
