@@ -14,7 +14,7 @@ LED-lysene er et koordinatsystem. Øverst til venstre er punkt ``(0, 0)``. Det e
 ![Punkt (0,0)](https://isimagan.github.io/startskjerm/img/Lys 0 0.png)
 
 ## Steg 2
-Under ``||math:Matematikk||`` kan man trykke på ``Avansert``, og øverst på den lista som dukker opp ser du ``||functions:Funksjoner||``.
+Under ``||variables:Variabler||`` kan man trykke på ``Avansert``, og øverst på den lista som dukker opp ser du ``||functions:Funksjoner||``.
 Trykk på ``Lag en funksjon``, og bytt ut navnet ``gjørNoe`` med ``startSkjerm``.
 ![Funksjoner](https://isimagan.github.io/startskjerm/img/Funksjoner.png)
 
@@ -226,30 +226,24 @@ function startSkjerm() {
 ## Steg 12
 **Funksjonen er ferdig!**
 
-Sett inn en ``||basic:ved start||`` om den ikke er der allerede. Inni setter du inn ``||functions:startSkjerm()||``. Den finner du i ``||functions:Funksjoner||``-menyen.
+Sett inn en ``||basic:ved start||`` om den ikke er der allerede. Inni setter du inn ``||functions:kjør startSkjerm||``. Den finner du i ``||functions:Funksjoner||``-menyen.
 ``` blocks
 startSkjerm()
-function startSkjerm() {
-    lysX = 0
-    lysY = 0
-    for (let index = 0; index < 25; index++) {
-        led.toggle(lysX, lysY)
-        lysX += 1
-        if (lysX == 5) {
-            lysY += 1
-            lysX = 0
-        }
-        basic.pause(100)
-    }
-}
+function startSkjerm() {}
 ```
 
 ## Ferdig @showdialog
 **Ekstraoppgaver:**
 - Vi har brukt ``||led:bytt||``-blokken. Det vil si at lyset slås på om det er av, og av hvis det er på. Se hva som skjer hvis du også setter inn funksjonen når du trykker på ``||input:knapp A||``.
-- Kan du lage en annen animasjon for å slå av lysene når du enten trykker på ``||input:knapp B||``, ``||input:knapp A+B||`` eller ``||input:når ristes``||?
+- Kan du lage en annen animasjon for å slå av lysene når du enten trykker på ``||input:knapp B||``, ``||input:knapp A+B||`` eller ``||input:når ristes||``?
+```blocks
+input.onButtonPressed(Button.A, function () {})
+input.onButtonPressed(Button.B, function () {})
+input.onButtonPressed(Button.AB, function () {})
+input.onGesture(Gesture.Shake, function () {})
+```
 
 ## Steg 13
-Når du trykker på "Slutt" er du ferdig. Se på Showbie hvordan du overfører kodingen fra Safari til appen, og videre til en micro:bit.
+Når du trykker på *"Slutt"* er du ferdig. Se på Showbie hvordan du overfører kodingen fra Safari til appen, og videre til en micro:bit.
 
 <script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("https://makecode.microbit.org/", "isimagan/startskjerm");</script>
