@@ -251,3 +251,5 @@ function startSkjerm() {
 
 ## Steg 13
 Når du trykker på "Slutt" er du ferdig. Se på Showbie hvordan du overfører kodingen fra Safari til appen, og videre til en micro:bit.
+
+<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("https://makecode.microbit.org/", "isimagan/startskjerm");</script>
